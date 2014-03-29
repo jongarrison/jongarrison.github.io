@@ -1,0 +1,168 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    
+	<style type="text/css">
+		body {
+			padding: 40px;
+		}
+		
+		table {
+			border-collapse: separate;
+			border-spacing: 1px;
+		}
+	
+		.magicsquare td {
+			padding: 5px;
+			margin: 2px;
+			width: 40px;
+			height: 40px;
+		}
+		
+		td.number, 
+		.formula td {
+			border: 1px solid black;
+		}
+		
+		table.magicsquare {
+			margin: 30px;
+		}
+		
+		td.sum {
+			background-color: #448844;
+		}
+	</style>
+	
+	<script type="text/javascript">
+	
+		function makeTheMagicSquare() {
+			a = parseInt($('input#a').val());
+			b = parseInt($('input#b').val());
+			c = parseInt($('input#c').val());
+			
+			console.log("Found values for a, b, c: " + a + ", " + b + ", " + c);
+		
+			$('table.magicformula td').each(function() { 
+				var currentAddress = $(this).attr("class");
+				console.log("found address: " + currentAddress); 
+				
+				target = 'table.magicsquare td.' + currentAddress;
+				source = 'table.magicformula td.' + currentAddress;
+				console.log("setting: " + target);
+				
+				$(target).text(eval($(source).text()));
+			});
+		}
+		
+		function showTheSums() {
+			alert("Ian, I told you this part doesn't work yet!!!! :)");
+		}
+		
+	
+	</script>
+	
+</head>
+<body>
+
+<div>
+	<h1>Magic Square Factory</h1>
+
+	<p>
+		<h3>Hi Ian!</h3>
+
+		<p>
+		Remember your homework about making magic squares?  I've been thinking about that.  I never learned how to make magic squares and so I thought I'd read a bit about them.  I learned a lot from the Wikipedia page on magic squares and they have some tricks for making them (<a href="http://en.wikipedia.org/wiki/Magic_square">Magic Squares</a>).  I am going to try to use the first technique to make magic squares from that wikipedia page: <a href="http://en.wikipedia.org/wiki/Magic_square#Method_for_constructing_a_magic_square_of_order_3">http://en.wikipedia.org/wiki/Magic_square#Method_for_constructing_a_magic_square_of_order_3</a>	
+		</p>
+	</p>
+</div>
+
+<div>
+	<h2>Here is the formula from wikipedia:</h2>
+
+	<p>
+		a, b, and c are any numbers that are combined in the way below to create the magic square.  Take a look at the formulas for a second and then enter your own numbers below.
+	</p>
+
+	<table class="magicformula">
+	<tbody><tr>
+		<td class="0_0">c + a</td>
+		<td class="1_0">c - a - b</td>
+		<td class="2_0">c + b</td>
+		</tr>
+		<tr>
+		<td class="0_1">c - a + b</td>
+		<td class="1_1">c</td>
+		<td class="2_1">c + a - b</td>
+		</tr>
+		<tr>
+		<td class="0_2">c - b</td>
+		<td class="1_2">c + a + b</td>
+		<td class="2_2">c - a</td>
+		</tr>
+	</tbody></table>
+</div>
+
+<div id="input">
+
+	<p>
+		So that's how the formula works.  Now put in your own numbers and create your own magic square below.
+	</p>
+	
+	<label for="a">a:</label>
+	<input type="text" name="a" id="a" value="0" />
+
+	<label for="b">b:</label>
+	<input type="text" name="b" id="b" value="0" />
+
+	<label for="c">c:</label>
+	<input type="text" name="c" id="c" value="0" />
+
+	<div>
+		<input type="button" value="Make The Magic Squares!" onclick="makeTheMagicSquare();" />
+	</div>
+
+	<p>
+		After pushing that button, take a look at the numbers below and figure out the value that will show up in the green squares.  Remember, all of the green squares should have the same value when you add the numbers across, down or diagonally, right?
+	</p>
+	
+	<div>
+		<input type="button" value="Ok, I'm ready.  Show The Sums." onclick="showTheSums();" />
+	</div>
+</div>
+
+<table class="magicsquare">
+<tbody>
+	<tr>
+		<td class="number 0_0"></td>
+		<td class="number 1_0"></td>
+		<td class="number 2_0"></td>
+		<td class="border sum 3_0"></td>
+	<tr>
+	<tr>
+		<td class="number 0_1"></td>
+		<td class="number 1_1"></td>
+		<td class="number 2_1"></td>
+		<td class="border sum 3_1"></td>
+	<tr>
+	<tr>
+		<td class="number 0_2"></td>
+		<td class="number 1_2"></td>
+		<td class="number 2_2"></td>
+		<td class="border sum 3_2"></td>
+	<tr>
+	<tr>
+		<td class="border sum 0_3"></td>
+		<td class="border sum 1_3"></td>
+		<td class="border sum 2_3"></td>
+		<td class="border sum 3_3"></td>	
+	<tr>
+</tbody>
+</table>
+
+
+
+
+</body>
+</html>

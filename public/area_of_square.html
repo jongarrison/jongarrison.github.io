@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="squareDemoApp" id="top">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" href="libs/jquery-ui/themes/excite-bike/jquery-ui.css">
+
+  <style>
+    .sliderExample {
+      width: 500px;
+      padding: 2px;
+    }
+
+    #svg {
+      width: 500px;
+      height: 450px;
+      border: 1px solid black;
+    }
+
+    h3 {
+      font-size: 14px;
+      padding: 1px;
+      margin: 1px;
+    }
+  </style>
+</head>
+<body ng-controller="squareDemoCtrl">
+
+  <div id="example">
+
+    <strong>Hi Ian!</strong>
+
+    <div>
+      I heard about your homework assignment about calculating the area of a square and I thought I'd put together something to show you the relationship between the sizes of the sides of the square to the squares area.
+    </div>
+
+    <div class="sliderExample"><a name="ex1"></a>
+
+      <h3>Set The Total Area:</h3>
+      <input type="text" ng-model="squareVals.totalArea" />
+
+      <h3>Width (X)</h3>
+      <div id="uiSliderX1" ui-slider="slider.optionsX" min="0" max="40" ng-model="squareVals.sliderX1"></div>
+      X: <strong>{{squareVals.sliderX1}}</strong>
+
+      <h3>Height (Y)</h3>
+      <div id="uiSliderY1" ui-slider="slider.optionsY" min="0" max="40" ng-model="squareVals.sliderY1"></div>
+      Y: <strong>{{squareVals.sliderY1}}</strong>
+
+    </div>
+
+    <svg id="svg"></svg>
+
+  </div>
+
+
+  <script src="libs/jquery/dist/jquery.js"></script>
+  <script src="libs/jquery-ui/jquery-ui.js"></script>
+  <script src="libs/angular/angular.js"></script>
+  <script src="libs/snap.svg/dist/snap.svg.js"></script>
+  <script src="js/slider.js"></script>
+  <script>
+    var app = angular.module('squareDemoApp', ['ui.slider']);
+
+    app.controller('squareDemoCtrl', function($scope, $log) {
+      console.log("squareDemoCtrl Setup");
+
+      $scope.squareVals = {
+        totalArea: 40,
+        sliderX1: 20,
+        sliderY1: 2
+      };
+
+      var paper = Snap("#svg");
+      var rectangle = paper.rect(10, 10, $scope.squareVals.sliderX1 * 10, $scope.squareVals.sliderY1 * 10);
+      var rectangleMagnification = 12;
+      //rectangle.animate({x: 100}, 1000);
+
+      $scope.$watch('squareVals.sliderX1', function() {
+
+        $log.info("SquareVals.sliderX1 changed");
+        $scope.squareVals.sliderY1 = $scope.squareVals.totalArea / $scope.squareVals.sliderX1;
+        redrawRectangle();
+        $log.info("Total Area: " + $scope.squareVals.totalArea + " Y1 should be: " + $scope.squareVals.sliderY1);
+
+      });
+
+      $scope.$watch('squareVals.sliderY1', function() {
+        $log.info("SquareVals.sliderX1 changed");
+        $scope.squareVals.sliderX1 = $scope.squareVals.totalArea / $scope.squareVals.sliderY1;
+        redrawRectangle();
+        $log.info("Total Area: " + $scope.squareVals.totalArea + " X1 should be: " + $scope.squareVals.sliderX1);
+      });
+
+      function redrawRectangle() {
+        rectangle.animate({width: $scope.squareVals.sliderX1 * rectangleMagnification, height: $scope.squareVals.sliderY1 * rectangleMagnification}, 500);
+      }
+
+
+      // Slider options with event handlers
+      $scope.slider = {
+        'optionsX': {
+          start: function (event, ui) {
+            $log.info('Event: X Slider start - values: x:' + $scope.squareVals.sliderX1 + ", y:" + $scope.squareVals.sliderY1, event);
+          },
+          stop: function (event, ui) {
+            $scope.$apply(function() {
+              $log.info('Event: X Slider stop - values: x:' + $scope.squareVals.sliderX1 + ", y:" + $scope.squareVals.sliderY1, event);
+            });
+          }
+        },
+        'optionsY': {
+          start: function (event, ui) {
+            $log.info('Event: Y Slider start - values: x:' + $scope.squareVals.sliderX1 + ", y:" + $scope.squareVals.sliderY1, event);
+          },
+          stop: function (event, ui) {
+            $scope.$apply(function() {
+              $log.info('Event: Y Slider stop - values: x:' + $scope.squareVals.sliderX1 + ", y:" + $scope.squareVals.sliderY1, event);
+
+            });
+          }
+        }
+      }
+
+
+    });
+
+    /*
+    // To set an option for all sliders
+    app.factory('uiSliderConfig', function ($log) {
+      return {
+        start: function (event, ui) {
+          $log.info('Event: Slider start - set with uiSliderConfig', event);
+        },
+        stop: function (event, ui) {
+          $log.info('Event: Slider stop - set with uiSliderCOnfig', event);
+        }
+      };
+    });
+    */
+
+  </script>
+
+</body>
+</html>

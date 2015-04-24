@@ -13,15 +13,27 @@
     }
 
     #svg {
-      width: 500px;
-      height: 450px;
-      border: 1px solid black;
+      width: 1000px;
+      height: 1000px;
+      border: none;
     }
 
     h3 {
-      font-size: 14px;
-      padding: 1px;
+      font-size: 16px;
+      padding: 3px;
       margin: 1px;
+    }
+
+    strong {
+      font-size: 15px;
+    }
+
+    .slider {
+      margin: 3px;
+    }
+
+    svg#svg {
+      margin: 6px;
     }
   </style>
 </head>
@@ -32,7 +44,7 @@
     <strong>Hi Ian!</strong>
 
     <div>
-      I heard about your homework assignment about calculating the area of a square and I thought I'd put together something to show you the relationship between the sizes of the sides of the square to the squares area.
+      I heard about your homework assignment about calculating the area of a square and I thought I'd put together something to show you the relationship between the area of a rectangle to the size of the sides of the rectangle.  You can use the sliders or the text fields to enter values.  - Dad
     </div>
 
     <div class="sliderExample"><a name="ex1"></a>
@@ -41,12 +53,12 @@
       <input type="text" ng-model="squareVals.totalArea" />
 
       <h3>Width (X)</h3>
-      <div id="uiSliderX1" ui-slider="slider.optionsX" min="0" max="40" ng-model="squareVals.sliderX1"></div>
-      X: <strong>{{squareVals.sliderX1}}</strong>
+      <div id="uiSliderX1" class="slider" ui-slider="slider.optionsX" min="0" max="40" ng-model="squareVals.sliderX1"></div>
+      X: <input ng-model="squareVals.sliderX1" />
 
       <h3>Height (Y)</h3>
-      <div id="uiSliderY1" ui-slider="slider.optionsY" min="0" max="40" ng-model="squareVals.sliderY1"></div>
-      Y: <strong>{{squareVals.sliderY1}}</strong>
+      <div id="uiSliderY1" class="slider" ui-slider="slider.optionsY" min="0" max="40" ng-model="squareVals.sliderY1"></div>
+      Y: <input ng-model="squareVals.sliderY1" />
 
     </div>
 
@@ -69,13 +81,16 @@
       $scope.squareVals = {
         totalArea: 40,
         sliderX1: 20,
-        sliderY1: 2
+        sliderY1: 2,
+        gridX: 1000,
+        gridY: 1000,
+        magnification: 12
       };
 
       var paper = Snap("#svg");
-      var rectangle = paper.rect(10, 10, $scope.squareVals.sliderX1 * 10, $scope.squareVals.sliderY1 * 10);
-      var rectangleMagnification = 12;
-      //rectangle.animate({x: 100}, 1000);
+      var grid = drawGrid(paper);
+      var rectangle = paper.rect($scope.squareVals.magnification * 2, $scope.squareVals.magnification * 2, $scope.squareVals.sliderX1 * 10, $scope.squareVals.sliderY1 * 10);
+      rectangle.attr({fill: "#FF0000"});
 
       $scope.$watch('squareVals.sliderX1', function() {
 
@@ -94,9 +109,28 @@
       });
 
       function redrawRectangle() {
-        rectangle.animate({width: $scope.squareVals.sliderX1 * rectangleMagnification, height: $scope.squareVals.sliderY1 * rectangleMagnification}, 500);
+        rectangle.animate({width: $scope.squareVals.sliderX1 * $scope.squareVals.magnification, height: $scope.squareVals.sliderY1 * $scope.squareVals.magnification}, 500);
       }
 
+      function drawGrid(paper) {
+        var gridX = $scope.squareVals.gridX;
+        var gridY = $scope.squareVals.gridY;
+
+        //Lets do the vertical lines first
+        for (i = 0; i < gridX; i = i + $scope.squareVals.magnification) {
+          var pathString = "M" + i + "," + 0 + "L" + i + "," + gridY;
+          $log.info("Drawing X line: " + pathString);
+          paper.path(pathString).attr({stroke: "#000000", strokeWidth: 1});
+        }
+
+        //Now the horizontal lines
+        for (i = 0; i < gridY; i = i + $scope.squareVals.magnification) {
+          var pathString = "M" + 0 + "," + i + "L" + gridY + "," + i;
+          $log.info("Drawing Y line: " + pathString);
+          paper.path(pathString).attr({stroke: "#000000", strokeWidth: 1});
+        }
+
+      }
 
       // Slider options with event handlers
       $scope.slider = {

@@ -116,8 +116,8 @@
       }
 
       function drawGrid(paper) {
-        var gridX = $scope.squareVals.gridX;
-        var gridY = $scope.squareVals.gridY;
+        var gridX = Math.round($scope.squareVals.gridX / $scope.squareVals.magnification) * $scope.squareVals.magnification + 1;
+        var gridY = Math.round($scope.squareVals.gridY /  $scope.squareVals.magnification) * $scope.squareVals.magnification + 1;
 
         //Lets do the vertical lines first
         for (i = 0; i < gridX; i = i + $scope.squareVals.magnification) {

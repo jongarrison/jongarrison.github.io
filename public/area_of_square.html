@@ -53,11 +53,11 @@
       <input type="text" ng-model="squareVals.totalArea" />
 
       <h3>Width (X)</h3>
-      <div id="uiSliderX1" class="slider" ui-slider="slider.optionsX" min="0" max="40" ng-model="squareVals.sliderX1"></div>
+      <div id="uiSliderX1" class="slider" ui-slider="slider.optionsX" min="0" max="{{squareVals.totalArea}}" ng-model="squareVals.sliderX1"></div>
       X: <input ng-model="squareVals.sliderX1" />
 
       <h3>Height (Y)</h3>
-      <div id="uiSliderY1" class="slider" ui-slider="slider.optionsY" min="0" max="40" ng-model="squareVals.sliderY1"></div>
+      <div id="uiSliderY1" class="slider" ui-slider="slider.optionsY" min="0" max="{{squareVals.totalArea}}" ng-model="squareVals.sliderY1"></div>
       Y: <input ng-model="squareVals.sliderY1" />
 
     </div>
@@ -92,14 +92,16 @@
       var rectangle = paper.rect($scope.squareVals.magnification * 2, $scope.squareVals.magnification * 2, $scope.squareVals.sliderX1 * 10, $scope.squareVals.sliderY1 * 10);
       rectangle.attr({fill: "#FF0000"});
 
-      $scope.$watch('squareVals.sliderX1', function() {
+      $scope.$watch('squareVals.totalArea', updateXSliderValue);
+      $scope.$watch('squareVals.sliderX1', updateXSliderValue);
 
+      function updateXSliderValue() {
         $log.info("SquareVals.sliderX1 changed");
         $scope.squareVals.sliderY1 = $scope.squareVals.totalArea / $scope.squareVals.sliderX1;
         redrawRectangle();
         $log.info("Total Area: " + $scope.squareVals.totalArea + " Y1 should be: " + $scope.squareVals.sliderY1);
 
-      });
+      }
 
       $scope.$watch('squareVals.sliderY1', function() {
         $log.info("SquareVals.sliderX1 changed");
@@ -107,6 +109,7 @@
         redrawRectangle();
         $log.info("Total Area: " + $scope.squareVals.totalArea + " X1 should be: " + $scope.squareVals.sliderX1);
       });
+
 
       function redrawRectangle() {
         rectangle.animate({width: $scope.squareVals.sliderX1 * $scope.squareVals.magnification, height: $scope.squareVals.sliderY1 * $scope.squareVals.magnification}, 500);

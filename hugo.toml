@@ -1,4 +1,0 @@
-baseURL = 'https://jongarrison.github.io'
-languageCode = 'en-us'
-title = 'Howdy from Jon Garrison'
-theme = "hugo-profile"

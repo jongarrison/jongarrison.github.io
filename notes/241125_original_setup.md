@@ -15,5 +15,21 @@ I then forked the excllent hugo-profile project and git submoduled it:
 
     git submodule add git@github.com:jongarrison/hugo-profile.git themes/hugo-profile
 
-Configure the Theme: Open the config.toml file in your Hugo site directory and set the theme:
+delete the hugo.toml file (this will be replaced with config.yaml in the next step)
+
+cp -r themes/hugo-profile/exampleSite/* .
+
+Configure the config.yaml file to have the settings you want (title, etc) at the top of the file
+
+    hugo server
+
+open http://localhost:1313
+
+And proceed with customizing:
+
+* config.yaml: Update site settings such as title, description, and other parameters.
+* content: Add or modify content files like blog posts and pages.
+* layouts: Customize the layout and design of your site.
+* static: Add or update static assets like images, CSS, and JavaScript files.
+
 

@@ -23,12 +23,12 @@ markup:
       unsafe: true
 
 Menus:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
+  main: #Menu Links "About Me" - "Photos" - etc
+    # - identifier: blog #JG - Reenable blog link when I have uptodate content
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blogs
+    #   weight: 1
     - identifier: gallery
       name: Photos
       title: Blog posts
@@ -218,7 +218,8 @@ params:
     # title: "Custom Name"
     items:
       - title: "LED Lighting"
-        content: I've worked on a variety of LED lighting projects, including custom LED strips, LED matrix displays, and LED lighting for art installations.
+        content: I've worked on a variety of LED lighting projects, custom 3D printed LED matrix displays, art pieces, and product prototypes.
+        image: /images/led_grid_square.gif
       # - title: Hugo Profile
       #   content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
       #   image: /images/projects/profile.png

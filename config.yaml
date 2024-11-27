@@ -284,7 +284,7 @@ params:
   terms:
     read: "Read"
     toc: "Table Of Contents"
-    copyright: ""
+    copyright: " "
     pageNotFound: "Page not found"
     emailText: "Check out this site"
 

@@ -33,3 +33,12 @@ And proceed with customizing:
 * static: Add or update static assets like images, CSS, and JavaScript files.
 
 
+HUGO > Pages deployment
+
+* I tried using copilot unsuccessfully to do the Pages deployment. In the end, I read some stuff online and Github.com > Actions > "New Workflow" button > Searched on "hugo"
+* The repository had an old setup to do a Jekyll build. I added, with copilot's help a file to disable jekyll building
+* The repository also had an old setting related to Pages that needed to be changed. Github.com > Settings > Pages > Build and Deployment > Set to "Github Actions"
+* removed the .github > workflows > gh-pages.yml file that copilot had me add.
+
+
+

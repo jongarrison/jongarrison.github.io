@@ -24,11 +24,11 @@ markup:
 
 Menus:
   main: #Menu Links "About Me" - "Photos" - etc
-    # - identifier: blog #JG - Reenable blog link when I have uptodate content
-    #   name: Blog
-    #   title: Blog posts
-    #   url: /blogs
-    #   weight: 1
+    - identifier: blog #JG - Reenable blog link when I have uptodate content
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
     - identifier: gallery
       name: Photos
       title: Blog posts
@@ -129,8 +129,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Jon"
-    subtitle: "I like making stuff and exploring"
-    content: "Computer software, electronics, 2 wheels, boats, photography, wandering, etc. I'll try to share a little bit of everything here."
+    subtitle: "Can I help you make something?"
+    content: "Software, firmware, electronics, 3D design, algorithmic design, 2 wheels, boats, photography, exploring, etc. I'll try to share a little bit of everything here. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
     image: /images/red-zep.png
     bottomImage:
       enable: false
@@ -214,7 +214,7 @@ params:
 
   # projects
   projects:
-    enable: true
+    enable: false
     # title: "Custom Name"
     items:
       - title: "LED Lighting"
@@ -253,9 +253,9 @@ params:
   footer:
     recentPosts:
       path: "blogs"
-      count: 3
-      title: Recent Posts
-      enable: false
+      count: 10
+      title: Posts
+      enable: true
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/jongarrison

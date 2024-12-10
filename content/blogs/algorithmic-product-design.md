@@ -12,8 +12,6 @@ description: "A Rhino3d/Grasshopper/Python code product design demo"
 toc: false
 ---
 
-## Algorithmic Product Design
-
 It is fun to develop physical products using software development tools. In software, we expect to take well defined inputs and do transformations until we have the desired outputs. Designing and building things in the world is subject to a lot of different constraints than software, but in many parts of the design and manufacturing process there are opportunities to use software concepts to great advantage.
 
 

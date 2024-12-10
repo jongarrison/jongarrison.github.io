@@ -12,8 +12,6 @@ description: "Some LED lighting projects"
 toc: true
 ---
 
-## LED Lighting
-
 I've worked on a variety of LED lighting projects, custom 3D printed LED matrix displays, art pieces, and product prototypes.
 
 My favorite project so far has been creating a 3D printable LED Matrix. The lights are driven by the very fun to use [Pixelblaze](https://electromage.com/pixelblaze) LED controller. The LED Matrix is comprised of reconfigurable cubes that each hold a large WS2812 light that is part of a continuous strand. The Pixelblaze allows the creation of a mapping function that will map the individual pixels into physical space. It is then easy to create constantly changing animated patterns that make for a pleasant background piece in a room.

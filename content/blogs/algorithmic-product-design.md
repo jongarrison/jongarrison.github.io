@@ -1,6 +1,6 @@
 ---
-title: "Algorithmic Product Design"
-date: 2024-12-10T12:00:00+09:00
+title: "Algorithmic Design"
+date: 2024-12-17T12:00:00+09:00
 draft: false
 author: "Jon"
 tags:
@@ -39,6 +39,9 @@ In this case, I needed a duct to fit in a specific location inside the vented ea
 
 You can find the associated Grasshopper file [Here](https://github.com/jongarrison/241209_Laser_Cutter_Vent)
 
-<img src="https://github.com/jongarrison/241209_Laser_Cutter_Vent/raw/main/vent_gh_view.png" />
+<p align="center">
+  <img src="https://github.com/jongarrison/241209_Laser_Cutter_Vent/raw/main/vent_gh_view.png" />
 
+<p />
 <img src="https://github.com/jongarrison/241209_Laser_Cutter_Vent/raw/main/vent_rhino_view.png" />
+</p>

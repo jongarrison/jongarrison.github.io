@@ -162,12 +162,14 @@ params:
       I am a software developer currently seeking independent projects. 
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "Here are a few of the technologies I enjoy working with"
       items:
-        - "Python"
-        - "Javascript"
-        - "Arduino"
-        - "Rhino3D/Grasshopper/Python"
+        - "Languages: Python, Javascript, C++, Java, SQL, HTML, CSS"
+        - "Microcontroller Work: Arduino/C++/C, PlatformIO, Bluetooth, Nordic nRF52, esp32"
+        - "3D Design: Rhino3D (with Grasshopper and Python), Fusion 360, OpenSCAD"
+        - "Web Development: React, Node.js, Express, MongoDB, SQL, Bootstrap"
+        - "Electronics: soldering, machine in the loop testing, debugging"
+        - "Data Analysis: Python, Pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebooks"
 
   # Experience
   experience:

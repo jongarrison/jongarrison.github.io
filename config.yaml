@@ -25,13 +25,13 @@ markup:
 Menus:
   main: #Menu Links "About Me" - "Photos" - etc
     - identifier: blog #JG - Reenable blog link when I have uptodate content
-      name: Blog
-      title: Blog posts
+      name: Posts
+      title: Posts
       url: /blogs
       weight: 1
     - identifier: gallery
       name: Photos
-      title: Blog posts
+      title: Photography
       url: https://www.flickr.com/photos/earthwandering/albums  #/gallery
       weight: 2
     #Dropdown menu

@@ -30,7 +30,7 @@ Menus:
       url: /blogs
       weight: 1
     - identifier: gallery
-      name: Photos
+      name: Photography
       title: Photography
       url: https://www.flickr.com/photos/earthwandering/albums  #/gallery
       weight: 2

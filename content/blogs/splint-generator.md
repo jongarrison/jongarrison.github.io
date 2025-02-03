@@ -27,7 +27,8 @@ I printed an example for my own finger and it seemed to work very well. I curren
 What do you think about this work in progress? If you'd like to talk about it, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)
 
 <p align="center">
-    <img src="/images/splint/printed_splint.png" />
+    <img src="/images/splint/gh_screen.png" />
     <img src="/images/splint/measuring.png" />
     <img src="/images/splint/prusa_bed.png" />
+    <img src="/images/splint/printed_splint.png" />
 </p>

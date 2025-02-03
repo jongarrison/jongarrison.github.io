@@ -13,7 +13,7 @@ description: "Grasshopper script for generating finger splints"
 toc: false
 ---
 
-I recently got to talk to a doctor that mentioned the challenges of creating an effective finger splint for certain types of injuries. I considered it a bit and thought it might be interesting to try to come up with a solution in Grasshopper. 
+I recently got to talk to a doctor that mentioned the challenges of creating an effective finger splint for certain types of injuries. I considered it a bit and thought it might be interesting to try to come up with a solution in [Grasshopper](/blogs/ptwd250115/). 
 
 I started by creating a basic finger model (and then added the rest of the hand for fun). The finger model allows inputting various dimensions for the injured finger:
 - Angle in degrees at each phalange

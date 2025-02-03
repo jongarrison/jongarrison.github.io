@@ -1,5 +1,5 @@
 ---
-title: "Algorithmic Design"
+title: "Algorithmic Design/CAD"
 date: 2024-12-17T12:00:00+09:00
 draft: false
 author: "Jon"
@@ -13,6 +13,8 @@ toc: false
 ---
 
 It is fun to develop physical products using software development tools. In software, we expect to take well defined inputs and do transformations until we have the desired outputs. Designing and building things in the real world is subject to a lot of different constraints than software, but in many parts of the design and manufacturing process there are opportunities to use software concepts to great advantage.
+
+
 
 
 The demo project that I'm going to describe here, doesn't really deserve this treatment, but it was fun anyways! 

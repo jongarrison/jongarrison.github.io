@@ -88,7 +88,7 @@ I saw an excellent presentation at [CrowdSupply](https://www.crowdsupply.com/)'s
 
 I was very lucky to have some helpful PCB design advice from Robin of <a href="https://www.island-underground.com/">Island Underground</a>.
 
-I started with KiCad by watching a number of youtube videos. [This one](https://www.youtube.com/watch?v=3FGNw28xBr0) was a good quick overview that I re-watched many times. One particular aspect of that video that I thought was helpful was the design of a custom footprint. I end up using this for the potentiometer footprints.
+I started with KiCad by watching a number of youtube videos. [This one](https://www.youtube.com/watch?v=3FGNw28xBr0) was a good quick overview that I re-watched many times. One particular aspect of that video that I thought was helpful was the design of a custom footprint. I ended up using this for the potentiometer footprints.
 
 I followed Robin's advice to use [JLCPCB.com](https://jlcpcb.com/). Their website, prices and delivery time are amazing. I started uploading my gerber files around 10:30pm and production was started a few hours later. I had the pcbs in my hand 7 days later!
 

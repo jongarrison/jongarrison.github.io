@@ -20,7 +20,7 @@ I started by creating a basic finger model (and then added the rest of the hand 
 - Diameter (mm) at base of each phalange
 - Length (mm) of each phalange
 
-Once the finger model is in position, a number of projections can be done to create a shape that envelopes the finger. One issue to account for is varying levels of swelling to prepare for this, I leave an opening down the side of the splint which allows for expansion/contraction for swelling and ease of putting the splint on. When viewed from the fingertip, the splint supports the model finger down the middle exactly, but then widens to the sides to accomodate swelling while still locking the finger in the desired position. The sides of the splint are truncated in a flat surface that will allow easy 3D FDM printing.
+Once the finger model is in position, a number of projections can be done to create a shape that envelopes the finger. One issue to account for is varying levels of swelling to prepare for this, I leave an opening down the side of the splint which allows for expansion/contraction for swelling and ease of putting the splint on. When viewed from the fingertip, the splint supports the model finger down the middle exactly, but then widens to the sides to accommodate swelling while still locking the finger in the desired position. The sides of the splint are truncated in a flat surface that will allow easy 3D FDM printing.
 
 I printed an example for my own finger and it seemed to work very well. I currently imagine it being secured with tape.
 

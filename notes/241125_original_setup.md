@@ -11,7 +11,7 @@ I then wiped out the contents of my old jongarrison repo and created a stub site
 
 I then mv'd all of the contents up to the root of the project.
 
-I then forked the excllent hugo-profile project and git submoduled it:
+I then forked the excellent hugo-profile project and git submoduled it:
 
     git submodule add git@github.com:jongarrison/hugo-profile.git themes/hugo-profile
 

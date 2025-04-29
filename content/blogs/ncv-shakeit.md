@@ -19,12 +19,20 @@ description: "Electronic product design"
 toc: false
 ---
 
-Summary: I created a small electronics device that detects the presence of AC power running a large dust collection system. The device then waits and follows a few rules to determine when to turn on relays to run a related dust filter cleaning system. The user can intervene to run the system manually and the device follows some rules to prevent overly frequent running of the filter cleaner. The system clearly displays its status to the user and provides a gentle audio warning when the system is about to start.
+<style>
+p img: padding: 2px;
+</style>
+
+Summary: I created a small electronic device that detects the presence of AC power running a large dust collection system. The device then waits and follows a few rules to determine when to turn on relays to run a related dust filter cleaning system. The user can intervene to run the system manually and the device follows some rules to prevent overly frequent running of the filter cleaner. The system clearly displays its status to the user and provides a gentle audio cue ("Another One Bites The Dust", "Shake It Off") when the system is about to start.
 
 <p style="width:100%; text-align: center;">
     <a href="https://github.com/jongarrison/NCV-ShakeIt">Firmware</a> -
     <a href="https://github.com/jongarrison/NCV-ShakeIt/tree/main/3D/PCB_NCV-ShakeIt/NCV-ShakeIt">PCB</a> - 
     <a href="https://github.com/jongarrison/NCV-ShakeIt/tree/main/3D/CaseGH_NCV-ShakeIt">Enclosure</a>
+</p>
+
+<p style="width:100%; text-align: center;">
+    <img style="max-width: 70%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_installed.jpg?raw=true" />
 </p>
 
 I've been looking for compelling electronics projects to hone my skills in firmware development, electronic circuit design, printed circuit board design and 3D generative design. A friend approached me with a problem at a large woodworking shop that had a few interesting features, so I decided to design a device for him. In the woodworking shop there is a large dust collector (with a 3 Phase Motor) that gets run a few times a day. When that large motor shuts down, a smaller two phase motor should shake a large dust filter after a long pause (~10min). The long pause allows the large motor to stop spinning but also allows an interval where somebody could turn the dust collection system back on which then delays the filter shaker from running. The filter shaker should be run occasionally, but not more often than necessary to extend the filter life. Running the filter shaker allows the whole system to run more efficiently as sawdust quickly clogs the filter.
@@ -139,14 +147,13 @@ Once I have this information described for each major component, I was then free
 
 # Coming Together...
 
-<p style="width:100%; text-align: center; vertical-align: top;">    
-<img style="max-width: 80%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_soldering.jpg?raw=true" />
-<img style="max-width: 80%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_soldered_board.jpg?raw=true" />
-<img style="max-width: 80%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_openbox.jpg?raw=true" />
-<img style="max-width: 80%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_lights.jpg?raw=true" />
-
+<p style="width:100%; text-align: center;">    
+<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_soldering.jpg?raw=true" />
+<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_soldered_board.jpg?raw=true" />
+<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_openbox.jpg?raw=true" />
+<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_lights.jpg?raw=true" />
+<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_installed_wide.jpg?raw=true" />
 </p>
-
 
 # Next Steps
 

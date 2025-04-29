@@ -131,7 +131,7 @@ params:
     intro: "Hi, my name is"
     title: "Jon"
     subtitle: "Can I help you make something?"
-    content: "Software, firmware, electronics, 3D design, generative design, PCB design...  I'll try to share a little bit of everything here. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
+    content: "Software (front end/back end), firmware, electronics, 3D design, generative design, PCB design...  I'll try to share a little bit of everything here. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
     image: /images/red-zep.png
     bottomImage:
       enable: false

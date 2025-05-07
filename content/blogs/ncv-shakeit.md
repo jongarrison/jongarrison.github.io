@@ -32,7 +32,7 @@ Summary: I created a small electronic device that detects the presence of AC pow
 </p>
 
 <p style="width:100%; text-align: center;">
-    <img style="max-width: 70%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_installed.jpg?raw=true" />
+    <img style="max-width: 70%;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_installed.jpg" />
 </p>
 
 I've been looking for compelling electronics projects to hone my skills in firmware development, electronic circuit design, printed circuit board design and 3D generative design. A friend approached me with a problem at a large woodworking shop that had a few interesting features, so I decided to design a device for him. In the woodworking shop there is a large dust collector (with a 3 Phase Motor) that gets run a few times a day. When that large motor shuts down, a smaller two phase motor should shake a large dust filter after a long pause (~10min). The long pause allows the large motor to stop spinning but also allows an interval where somebody could turn the dust collection system back on which then delays the filter shaker from running. The filter shaker should be run occasionally, but not more often than necessary to extend the filter life. Running the filter shaker allows the whole system to run more efficiently as sawdust quickly clogs the filter.
@@ -61,7 +61,7 @@ Brainstorming features based on the requirements:
 ## Getting Started
 
 <p style="width:100%; text-align: center;">
-    <img style="max-width: 70%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_prototype.jpg?raw=true" />
+    <img style="max-width: 70%;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_prototype.jpg" />
 </p>
 
 I jumped right in with the prototype board design. There were a few parts that I wanted to prototype first in isolation to understand them better:
@@ -89,9 +89,9 @@ I jumped right in with the prototype board design. There were a few parts that I
 I saw an excellent presentation at [CrowdSupply](https://www.crowdsupply.com/)'s [2024 Teardown Conference](https://www.crowdsupply.com/teardown/portland-2024) about the current state of [KiCAD](https://www.crowdsupply.com/teardown/portland-2024/long-talk/kicad-project-status). I was very impressed and hoped to get to use it for a project. Well, this is the project!
 
 <p style="width:100%; text-align: center; vertical-align: top;">
-    <img style="max-width: 30%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_schematic.png?raw=true" />
-    <img style="max-width: 30%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_footprint.png?raw=true" />
-    <img style="max-width: 30%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_board3d_kicad_v1.png?raw=true" />
+    <img style="max-width: 30%;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_schematic.png" />
+    <img style="max-width: 30%;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_footprint.png" />
+    <img style="max-width: 30%;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_board3d_kicad_v1.png" />
 </p>
 
 I was very lucky to have some helpful PCB design advice from Robin of <a href="https://www.island-underground.com/">Island Underground</a>.
@@ -101,7 +101,7 @@ I started with KiCad by watching a number of youtube videos. [This one](https://
 I followed Robin's advice to use [JLCPCB.com](https://jlcpcb.com/). Their website, prices and delivery time are amazing. I started uploading my gerber files around 10:30pm and production was started a few hours later. I had the pcbs in my hand 7 days later!
 
 <p style="width:100%; text-align: center; vertical-align: top;">
-    <img style="max-width: 30%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_emptypcb.png?raw=true" />
+    <img style="max-width: 30%;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_emptypcb.png" />
 </p>
 
 Also, Robin's prediction that I would have several changes that I would want to make to the board before it arrived proved to be true. Ha! He was certainly correct, but this first version of the board has proven to be serviceable. I left the pins untrimmed underneath both the microcontroller and the DFRobot Mini Player. This proved useful for connecting some last minute fixes. For example, I routed one of the speaker terminals to the wrong pin! This was an easy fix.
@@ -111,13 +111,13 @@ Also, Robin's prediction that I would have several changes that I would want to 
 For the last couple of years, I've been using [Rhino's Grasshopper](https://www.rhino3d.com/) tool for 3D design whenever it seems appropriate. There is a significant learning curve, but it feels very much like writing good modular software to me. I enjoy defining the inputs for a 3D object and then feeding those inputs into various algorithms until a solid, real life, useful object emerges. Also, by developing 3D objects in this way, designs can adapt as project constraints change.
 
 <p style="width:100%; text-align: center; vertical-align: top;">
-    <img style="max-width: 60%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_case_rhino.png?raw=true" />
+    <img style="max-width: 60%;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_case_rhino.png" />
 </p>
 
 For a very high level overview of how I created this enclosure, I'll describe the general flow of the thinking in the Grasshopper layout below. Also, you can look at the [Grasshopper file](https://github.com/jongarrison/NCV-ShakeIt/tree/main/3D/CaseGH_NCV-ShakeIt) itself if you want to dig deeper.
 
 <p style="width:100%; text-align: center; vertical-align: top;">
-    <img style="max-width: 80%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_grasshopper.png?raw=true" />
+    <img style="max-width: 80%;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_grasshopper.png" />
 </p>
 
 On the left, I am defining the various components that must fit inside the enclosure. There are 4 major components that take up space:
@@ -142,17 +142,17 @@ Once I have this information described for each major component, I was then free
 * I think that some of the concepts I captured in this Grasshopper project will continue to have value for future enclosure projects.
 
 <p style="width:100%; text-align: center; vertical-align: top;">
-    <img style="max-width: 60%;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_printing.jpg?raw=true" />
+    <img style="max-width: 60%;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_printing.jpg" />
 </p>
 
 # Coming Together...
 
 <p style="width:100%; text-align: center;">    
-<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_soldering.jpg?raw=true" />
-<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_soldered_board.jpg?raw=true" />
-<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_openbox.jpg?raw=true" />
-<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_lights.jpg?raw=true" />
-<img style="max-width: 80%; padding: 2px;" src="https://github.com/jongarrison/NCV-ShakeIt/blob/main/notes/shakeit_installed_wide.jpg?raw=true" />
+<img style="max-width: 80%; padding: 2px;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_soldering.jpg" />
+<img style="max-width: 80%; padding: 2px;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_soldered_board.jpg" />
+<img style="max-width: 80%; padding: 2px;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_openbox.jpg" />
+<img style="max-width: 80%; padding: 2px;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_lights.jpg" />
+<img style="max-width: 80%; padding: 2px;" src="https://raw.githubusercontent.com/jongarrison/NCV-ShakeIt/refs/heads/main/notes/shakeit_installed_wide.jpg" />
 </p>
 
 # Next Steps

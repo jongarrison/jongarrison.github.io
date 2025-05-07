@@ -1,6 +1,6 @@
 baseURL: "https://jongarrison.github.io"
 languageCode: "en-us"
-title: "Howdy from Jon"
+title: "Independent R&D"
 theme: hugo-profile
 
 outputs:
@@ -128,11 +128,20 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
+    intro: "Hi, Im"
     title: "Jon"
     subtitle: "Can I help you make something?"
-    content: "Software (front end/back end), firmware, electronics, 3D design, generative design, PCB design...  I'll try to share a little bit of everything here. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
-    image: /images/red-zep.png
+    content: "Software (front end/back end), firmware, electronics, 3D design, generative design, PCB design...  I'll try to share a little bit of everything here. I'd like to be your R&D department. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
+    image: /images/ptwd250115/vases_code.png
+    imageswitch:
+      interval: 5000
+      images:
+        - image: "/images/red-zep.png"
+        - image: "/images/splint/splint_on_model.png"
+        - image: "/images/algorithmic-product-design/vent_animation.gif"
+        - image: "/images/ptwd250115/vases_code.png"
+        - image: "/images/ptwd250115/vases_gray.png"
+
     bottomImage:
       enable: false
       roundImage: true # Make hero image circular | default false
@@ -171,6 +180,7 @@ params:
         - "Web Development: React, Node.js, Express, MongoDB, SQL, Bootstrap"
         - "Electronics: soldering, machine in the loop testing, debugging, PCB design, KiCad"
         - "Data Analysis: Python, Pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebooks"
+        - "Rapid prototyping: 3D printing, laser cutting, electronics design/assembly"
       
 
 

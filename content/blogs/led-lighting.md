@@ -4,9 +4,9 @@ date: 2024-12-09T12:00:00-09:00
 draft: false
 author: "Jon"
 tags:
-  - Markdown syntax
-  - Mathjax
-  - example
+  - LEDControl
+  - Pixelblaze
+  - lighting
 image: /images/leds/led_grid_square.gif
 description: "Some LED lighting projects"
 toc: true

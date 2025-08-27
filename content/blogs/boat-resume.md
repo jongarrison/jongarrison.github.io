@@ -64,7 +64,7 @@ I have had a lot of fun getting around in different ways including boats, bicycl
     <img style="" src="/images/boat-resume/red-zep-frame.jpg" />
 </p>
 
-[2014 West Coast Bicycle Trip](https://flickr.com/photos/earthwandering/albums/72157707820344824/with/15895407960) - My wife and rode two old bikes from Vancouver, BC to San Diego, CA. It was so much fun and we of course did a tremendous amount of bike repair along the way. Notable repairs included the spectacular structure failure of Steph's rear rack mount, which I was able to repair with found items on the side of the road (metal strap and thick copper wire). I also constructed a [guitar carrying rack from a milk crate](https://flickr.com/photos/earthwandering/16133280637/in/album-72157707820344824) found on the road.
+[2014 West Coast Bicycle Trip](https://flickr.com/photos/earthwandering/albums/72157707820344824/with/15895407960) - My wife and I rode two old bikes from Vancouver, BC to San Diego, CA. It was so much fun and we of course did a tremendous amount of bike repair along the way. Notable repairs included the spectacular failure of Steph's rear rack mount, which I was able to repair with found items on the side of the road (metal strap and thick copper wire). I also constructed a [guitar carrying rack from a milk crate](https://flickr.com/photos/earthwandering/16133280637/in/album-72157707820344824) found on the road.
 
 <p style="width:100%; text-align: center;">
     <img style="" src="/images/twowheels/couch.jpg" />

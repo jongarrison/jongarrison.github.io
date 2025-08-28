@@ -8,6 +8,8 @@ image: /images/boat-resume/jon.jpg
 description: "A twist on my normal resume for people interested in my "
 toc: false
 unlisted: true
+sitemap:
+  disable: true
 ---
 
 
@@ -23,7 +25,7 @@ Chris asked that I put together a list of projects and skills that might be rele
 
 * [PID Ball Roller Project](https://photos.app.goo.gl/arvyQxHxVxNx8ENEA) - I had encountered custom PID controllers first while doing glass blowing in the early 2000's. The engineer that ran the Firehouse shop had created custom kilns using PID control to maintain temperature. That got the idea in my mind and later when a project came up at Nike Innovation that might need a PID controller, I decided to create a small project to learn the required skills. I created a roller balancing beam. Control was managed by an Arduino controller using a sonar distance sensor and a servo motor. I designed the mechanical parts in OpenSCAD and printed the 3D parts on a kit built Prusa MK3S printer. I used an open source PID code library and an open source PID tuning library as the foundation for the software. It was very fun building and getting the rail balancer to smoothly keep the roller at a target distance from the distance sensor. 
 
-* Fishing Boat Engine Temp Warning System - I helped an Alaskan fisherman create a cylinder temperature monitoring system for his boat's large old Caterpillar diesel engine. He found the hardware and I implemented the PLC based software so that he had a touch screen temp viewing and alarm configuration screens in both the engine room and wheelhouse. I learned about PLC programming and networking. I also programmed the GUI interface for configuring alarm states and viewing the temperatures. The ship's alarm was activated by relay when trigger situations arose and the alarm could be cleared from either screen.
+* Fishing Boat Engine Temp Warning System - I helped an Alaskan fisherman create a cylinder temperature monitoring system for his boat's large old Caterpillar diesel engine. He found the hardware and I implemented the PLC based software so that he had a touch screen temp viewing and an alarm configuration screen in both the engine room and wheelhouse. I learned about PLC programming and networking. I also programmed the GUI interface for configuring alarm states and viewing the temperatures. The ship's alarm was activated by relay when trigger situations arose and the alarm could be cleared from either screen.
 
 * [Yome/Yurt Home Construction](https://www.flickr.com/photos/earthwandering/albums/72157698405471500/) - I lived on my land in Port Townsend for a few years in a yurt like structure that I built. I purchased the Yome skin used and had to fabricate and then assemble the structural pieces (mostly long wood pieces ripped from larger boards). It was a great place to live! Take a look at the pics to get a sense of the platform and internal structure.
 
@@ -46,7 +48,7 @@ I have had a lot of fun getting around in different ways including boats, bicycl
     <img style="" src="/images/boat-resume/strangewaves.jpg" />
 </p>
 
-[2015 Boat Build and Salish Sea Row](https://www.flickr.com/photos/earthwandering/albums/72157655062288763/) - My friend and I built two of his "Loon" camping rowboat designs and rowed them from PT up into the Canadian Gulf Islands and back to Anacortes. It was an amazing trip. We had both thought a lot about the design and to then contemplate it in a long ocean trip was a real reality check. The design held up very well and I am still using Red Zep to this day.
+[2015 Boat Build and Salish Sea Row](https://www.flickr.com/photos/earthwandering/albums/72157655062288763/) - My friend and I built two of his "Loon" camping rowboat designs and rowed them from PT up into the Canadian Gulf Islands and back to Anacortes. It was an amazing trip. We had both thought a lot about the design and to then contemplate it in a long ocean trip was a solid reality check. The design held up very well and I am still using Red Zep to this day.
 
 <p style="width:100%; text-align: center;">
     <img style="" src="/images/boat-resume/red-zep-frame.jpg" />

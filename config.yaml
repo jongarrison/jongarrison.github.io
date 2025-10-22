@@ -309,5 +309,20 @@ params:
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
 
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>
+  customScripts: | # You can add custom scripts which will be added before </body> tag
+    <!-- Default Statcounter code for My Blog https://jongarrison.github.io/ -->
+    <script type="text/javascript">
+    var sc_project=13177929; 
+    var sc_invisible=1; 
+    var sc_security="ecbdc99d"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics"
+    href="https://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="https://c.statcounter.com/13177929/0/ecbdc99d/1/"
+    alt="Web Analytics"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of Statcounter Code -->

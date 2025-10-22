@@ -27,7 +27,7 @@ Menus:
     - identifier: blog #JG - Reenable blog link when I have uptodate content
       name: Projects
       title: Projects
-      url: /blogs
+      url: /#recent-posts
       weight: 1
     - identifier: gallery
       name: Photography
@@ -269,7 +269,7 @@ params:
     recentPosts:
       path: "blogs"
       count: 10
-      title: Posts
+      title: Projects
       enable: true
       disableFeaturedImage: false
     socialNetworks:

@@ -131,7 +131,7 @@ params:
     intro: "Hi, Im"
     title: "Jon"
     subtitle: "Can I help you make something?"
-    content: "I'd like to be your R&D department. Software (front end/back end), firmware, electronics, 3D design, generative design, PCB design...  I'll try to share a little bit of everything here. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
+    content: "I'd like to be your R&D department. Software (front end/back end), AI integration/coding, firmware, electronics, 3D design, generative design, PCB design...  I'll try to share a little bit of everything here. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
     image: /images/ptwd250115/vases_code.png
     imageswitch:
       interval: 3000
@@ -169,11 +169,12 @@ params:
     title: "About Me"
     image: "/images/profile.png"
     content: |-
-      I am a software engineer currently seeking projects. I have a fair amount of experience applying software to solve problems across a variety of domains. Need to develop an overheat warning system for a large boat engine? I can help. Want to build a machine that verifies a manufactured product is doing what it should? I can help. Do you want to tie your website directly to a back end manufacturing processes? I can help. The potential for software to make things more efficient, more functional, and more delightful is nearly limitless.
+      I am a software engineer currently seeking projects. I have a fair amount of experience applying software to solve problems across a variety of domains. Need to develop an overheat warning system for a large boat engine? I can help. Want to build a machine that verifies a manufactured product is doing what it should? I can help. Do you want to tie your website directly to a back end manufacturing process? I can help. The potential for software to make things more efficient, more functional, and more delightful is nearly limitless.
     skills:
       enable: true
       title: "Here are a few of the technologies I enjoy working with"
       items:
+        - "AI Tools: Various models, integrations, mcp servers, and tools including old school tensorflow"
         - "Languages: Python, Javascript, C++, Java, SQL, HTML, CSS"
         - "Microcontroller Work: Arduino/C++/C, PlatformIO, Bluetooth, Nordic nRF52, esp32"
         - "3D and Generative Design: Rhino3D (with Grasshopper and Python), Fusion 360, OpenSCAD"
@@ -181,7 +182,7 @@ params:
         - "Electronics: soldering, machine in the loop testing, debugging, PCB design, KiCad"
         - "Data Analysis: Python, Pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebooks"
         - "Rapid prototyping: 3D printing, laser cutting, electronics design/assembly"
-      
+
 
 
   # Experience

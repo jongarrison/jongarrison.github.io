@@ -25,8 +25,8 @@ markup:
 Menus:
   main: #Menu Links "About Me" - "Photos" - etc
     - identifier: blog #JG - Reenable blog link when I have uptodate content
-      name: Posts
-      title: Posts
+      name: Projects
+      title: Projects
       url: /blogs
       weight: 1
     - identifier: gallery
@@ -131,10 +131,10 @@ params:
     intro: "Hi, Im"
     title: "Jon"
     subtitle: "Can I help you make something?"
-    content: "Software (front end/back end), firmware, electronics, 3D design, generative design, PCB design...  I'll try to share a little bit of everything here. I'd like to be your R&D department. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
+    content: "I'd like to be your R&D department. Software (front end/back end), firmware, electronics, 3D design, generative design, PCB design...  I'll try to share a little bit of everything here. If you'd like to talk about a project, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jonathangarrison/)"
     image: /images/ptwd250115/vases_code.png
     imageswitch:
-      interval: 5000
+      interval: 3000
       images:
         - image: "/images/red-zep.png"
         - image: "/images/splint/splint_on_model.png"

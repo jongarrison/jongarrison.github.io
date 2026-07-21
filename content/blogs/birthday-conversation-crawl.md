@@ -20,7 +20,7 @@ I'm not sure what to say about turning 50. It feels like a pretty weird mileston
 Want to get wistful? Exuberant? Hopeful for the future? Share a half baked idea? If so, join me for a walk around PT. 
 
 Join for any part of... 
-## Saturday Auguest 1st
+## Saturday August 1st
 * 2pm - 2:45 - Betta Bar (and actually I'm hoping they have their new Tiki bar in the Flagship building open by then)
 * 3pm - 3:45 - Sirens Pub
 * 4pm - whenever the exuberance runs out - Uptown Pub

@@ -1,6 +1,6 @@
 ---
 title: "Birthday Bar Walk"
-date: 2026-08-01T00:00:00-07:00
+date: 2026-07-20T00:00:00-07:00
 draft: false
 author: "Jon"
 tags: []

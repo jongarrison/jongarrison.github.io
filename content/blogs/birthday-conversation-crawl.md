@@ -4,10 +4,11 @@ date: 2026-08-01T00:00:00-07:00
 draft: false
 author: "Jon"
 tags: []
-description: "Conversation Crawl"
+description: "Birthday Conversation Crawl"
 toc: false
-_build:
-  list: false
+unlisted: true
+sitemap:
+  disable: true
 ---
 
 Hey awesome people!

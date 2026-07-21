@@ -1,5 +1,5 @@
 ---
-title: "Birthday Bar Walk"
+title: "Birthday Conversation Crawl"
 date: 2026-07-20T00:00:00-07:00
 draft: false
 author: "Jon"

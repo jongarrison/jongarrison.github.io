@@ -24,5 +24,3 @@ Join for any part of...
 * 2pm - 2:45 - Betta Bar (and actually I'm hoping they have their new Tiki bar in the Flagship building open by then)
 * 3pm - 3:45 - Sirens Pub
 * 4pm - whenever the exuberance runs out - Uptown Pub
-
-

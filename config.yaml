@@ -57,7 +57,8 @@ params:
   description: Public portfolio of Jon Garrison
   # staticPath: ""  # The path to serve the static files from
   # favicon: "/images/noun-led-7037426.png" #"/fav.png"
-  favicon: "/images/noun-led-redfull-7037426.svg"
+  # favicon: "/images/noun-led-redfull-7037426.svg"
+  favicon: "/images/led_jg.svg"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.

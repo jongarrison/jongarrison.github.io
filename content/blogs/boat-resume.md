@@ -5,7 +5,7 @@ draft: false
 author: "Jon"
 tags:
 image: /images/boat-resume/jon.jpg
-description: "A twist on my normal resume for people interested in my "
+description: "A twist on my normal resume for people interested in my boat skills"
 toc: false
 unlisted: true
 sitemap:

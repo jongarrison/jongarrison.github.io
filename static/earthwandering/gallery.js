@@ -14,6 +14,7 @@
   const positionInput = document.getElementById("ew-position");
   const cache = new Map();
   let catalog;
+  let overviewAlbums = [];
   let gallery = null;
   let routeVersion = 0;
   let frame = 0;
@@ -125,7 +126,7 @@
   }
   function overview() {
     const query = search.value.toLocaleLowerCase().trim();
-    const albums = catalog.albums.filter((album) => !query || `${album.title} ${album.description}`.toLocaleLowerCase().includes(query));
+    const albums = overviewAlbums.filter((album) => !query || `${album.title} ${album.description}`.toLocaleLowerCase().includes(query));
     const layout = geometry(albums.map((album) => album.cover?.width / album.cover?.height || 16 / 9), grid.clientWidth, true);
     grid.classList.add("ew-overview");
     grid.style.height = `${layout.containerHeight}px`;
@@ -397,6 +398,13 @@
   }
   getJSON("/earthwandering/data/index.json").then((value) => {
     catalog = value;
+    overviewAlbums = catalog.albums.filter((album) => album.id !== "camera-roll");
+    for (let remaining = overviewAlbums.length; remaining > 1; remaining--) {
+      const index = Math.floor(Math.random() * remaining);
+      [overviewAlbums[remaining - 1], overviewAlbums[index]] = [overviewAlbums[index], overviewAlbums[remaining - 1]];
+    }
+    const cameraRoll = catalog.albums.find((album) => album.id === "camera-roll");
+    if (cameraRoll) overviewAlbums.unshift(cameraRoll);
     document.getElementById("ew-totals").textContent = `${catalog.photo_count.toLocaleString()} photographs · ${catalog.video_count} videos · ${catalog.albums.length - 1} albums`;
     icons();
     render();

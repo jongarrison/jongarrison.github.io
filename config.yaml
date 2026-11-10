@@ -29,11 +29,16 @@ Menus:
       title: Projects
       url: /#recent-posts
       weight: 1
+    - identifier: blogs
+      name: Blog
+      title: Blog
+      url: /blogs/
+      weight: 2
     - identifier: gallery
       name: Photography
       title: Photography
       url: /blogs/earthwandering/
-      weight: 2
+      weight: 3
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu

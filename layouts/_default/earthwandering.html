@@ -1,0 +1,35 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Description }}">
+<link rel="stylesheet" href="/earthwandering/gallery.css?v=1">
+<script defer src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/justified-layout@4.1.0/dist/justified-layout.min.js" integrity="sha384-GvQ0CpnK/ylcGYpwg4J9L7gcskDnK7xjSb0CWw7Dtep1q6I810Oc5th4caE4JshY" crossorigin="anonymous"></script>
+<script defer src="/earthwandering/gallery.js?v=1"></script>
+{{ end }}
+
+{{ define "title" }}Earthwandering | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<main class="ew" data-ew-app>
+  <header class="ew-intro" id="ew-intro">
+    <h1>Earthwandering</h1>
+    <p id="ew-totals" class="ew-muted"></p>
+    <div class="ew-story">{{ .Content }}</div>
+  </header>
+  <nav class="ew-toolbar" aria-label="Earthwandering">
+    <div class="ew-modes">
+      <a href="/blogs/earthwandering/" data-ew-nav id="ew-albums-link"><i data-lucide="layout-grid" aria-hidden="true"></i> Albums</a>
+      <a href="?album=camera-roll" data-ew-nav id="ew-camera-link"><i data-lucide="images" aria-hidden="true"></i> Camera Roll</a>
+    </div>
+    <label class="ew-search" id="ew-search-wrap"><i data-lucide="search" aria-hidden="true"></i><input id="ew-search" type="search" placeholder="Find an album" aria-label="Find an album"></label>
+    <form class="ew-jump" id="ew-jump" hidden>
+      <label for="ew-position">Photo</label><input id="ew-position" type="number" min="1" value="1" aria-label="Jump to item number"><span id="ew-position-total"></span>
+      <button type="submit" title="Jump to item" aria-label="Jump to item"><i data-lucide="corner-down-left" aria-hidden="true"></i></button>
+    </form>
+  </nav>
+  <header class="ew-album-heading" id="ew-heading" hidden><h2 id="ew-title"></h2><p id="ew-description"></p><p id="ew-count" class="ew-muted"></p></header>
+  <p id="ew-status" class="ew-status" role="status">Loading photographs...</p>
+  <div id="ew-grid" class="ew-grid"></div>
+  <article id="ew-photo" class="ew-photo-view" hidden></article>
+  <noscript><p class="ew-status">JavaScript is required to browse the archive. <a href="https://www.flickr.com/photos/earthwandering/">View the source photostream on Flickr.</a></p></noscript>
+</main>
+{{ end }}

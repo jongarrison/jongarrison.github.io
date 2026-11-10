@@ -32,7 +32,7 @@ Menus:
     - identifier: gallery
       name: Photography
       title: Photography
-      url: https://www.flickr.com/photos/earthwandering/albums  #/gallery
+      url: /blogs/earthwandering/
       weight: 2
     #Dropdown menu
     # - identifier: dropdown

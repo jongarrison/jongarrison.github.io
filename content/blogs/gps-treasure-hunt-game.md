@@ -1,7 +1,7 @@
 ---
 title: "GPS Hot & Cold Treasure Hunt"
 date: 2026-11-25T12:00:00-09:00
-draft: true
+draft: false
 author: "Jon"
 tags:
   - Electronics
@@ -17,7 +17,6 @@ toc: false
 ---
 
 <!--
-Review draft: keep draft: true until ready to publish.
 Web photos are resized to a maximum edge of 1600 pixels with private
 metadata removed; the sRGB color profile is retained.
 
